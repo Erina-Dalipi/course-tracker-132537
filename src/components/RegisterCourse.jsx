@@ -15,12 +15,10 @@ function RegisterCourse({ courses, setCourses }) {
     const handleSubmit = useCallback(
         (e) => {
             e.preventDefault();
-
             if (form.name.trim() === "") {
                 alert("Course name is required");
                 return;
             }
-
             if (form.grade < 5 || form.grade > 10) {
                 alert("Grade must be between 5 and 10");
                 return;
