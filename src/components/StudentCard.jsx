@@ -1,4 +1,5 @@
 function StudentCard({ course }) {
+
     return (
         <div style={{ border: "1px solid black", margin: 10, padding: 10 }}>
             <h3>{course.name}</h3>
@@ -10,7 +11,7 @@ function StudentCard({ course }) {
             {course.grade < 50 && course.attending === false && (
                 <p style={{ color: "red" }}>At Risk</p>
             )}
-
+            
             {/* Eligible for distinction */}
             {course.grade >= 85 && (
                 <p style={{ color: "green" }}>Eligible for Distinction</p>
@@ -18,5 +19,4 @@ function StudentCard({ course }) {
         </div>
     );
 }
-
 export default StudentCard;
