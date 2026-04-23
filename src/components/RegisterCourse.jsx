@@ -73,7 +73,6 @@ function RegisterCourse({ courses, setCourses }) {
                 value={form.grade}
                 onChange={(e) => setForm({ ...form, grade: e.target.value })}
             />
-
             <label>
                 Attending:
                 <input
@@ -84,7 +83,6 @@ function RegisterCourse({ courses, setCourses }) {
                     }
                 />
             </label>
-
             <select
                 value={form.difficulty}
                 onChange={(e) =>
@@ -100,5 +98,4 @@ function RegisterCourse({ courses, setCourses }) {
         </form>
     );
 }
-
 export default RegisterCourse;

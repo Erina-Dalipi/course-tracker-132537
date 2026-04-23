@@ -11,7 +11,7 @@ function StudentCard({ course }) {
             {course.grade < 50 && course.attending === false && (
                 <p style={{ color: "red" }}>At Risk</p>
             )}
-            
+
             {/* Eligible for distinction */}
             {course.grade >= 85 && (
                 <p style={{ color: "green" }}>Eligible for Distinction</p>
