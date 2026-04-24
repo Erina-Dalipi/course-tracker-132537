@@ -22,7 +22,7 @@ function App() {
     },
     {
       id: 3,
-      name: "Web Development",
+      name: "Applied Probability and Statistics",
       credits: 4,
       grade: 10,
       attending: true,
